@@ -1,0 +1,222 @@
+$comment
+	File created using the following command:
+		vcd file encode.msim.vcd -direction
+$end
+$date
+	Mon Oct 13 12:53:51 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module encode_vlg_vec_tst $end
+$var reg 4 ! w [3:0] $end
+$var wire 1 " y [1] $end
+$var wire 1 # y [0] $end
+$var wire 1 $ z $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , y~0_combout $end
+$var wire 1 - Equal0~0_combout $end
+$var wire 1 . Equal0~1_combout $end
+$var wire 1 / w~combout [3] $end
+$var wire 1 0 w~combout [2] $end
+$var wire 1 1 w~combout [1] $end
+$var wire 1 2 w~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0#
+0"
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+1-
+1.
+02
+01
+00
+0/
+$end
+#40000
+b1 !
+12
+0%
+0.
+1$
+#80000
+b11 !
+b10 !
+02
+11
+1%
+1,
+1#
+#120000
+b11 !
+12
+0%
+#160000
+b111 !
+b101 !
+b100 !
+02
+01
+10
+1%
+0,
+0-
+0#
+1"
+#200000
+b101 !
+12
+0%
+#240000
+b111 !
+b110 !
+02
+11
+1%
+#280000
+b111 !
+12
+0%
+#320000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+02
+01
+00
+1/
+1%
+1,
+1#
+#360000
+b1001 !
+12
+0%
+#400000
+b1011 !
+b1010 !
+02
+11
+1%
+#440000
+b1011 !
+12
+0%
+#480000
+b1111 !
+b1101 !
+b1100 !
+02
+01
+10
+1%
+#520000
+b1101 !
+12
+0%
+#560000
+b1111 !
+b1110 !
+02
+11
+1%
+#600000
+b1111 !
+12
+0%
+#640000
+b111 !
+b11 !
+b1 !
+b0 !
+02
+01
+00
+0/
+1%
+1.
+0,
+1-
+0#
+0$
+0"
+#680000
+b1 !
+12
+0%
+0.
+1$
+#720000
+b11 !
+b10 !
+02
+11
+1%
+1,
+1#
+#760000
+b11 !
+12
+0%
+#800000
+b111 !
+b101 !
+b100 !
+02
+01
+10
+1%
+0,
+0-
+0#
+1"
+#840000
+b101 !
+12
+0%
+#880000
+b111 !
+b110 !
+02
+11
+1%
+#920000
+b111 !
+12
+0%
+#960000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+02
+01
+00
+1/
+1%
+1,
+1#
+#1000000

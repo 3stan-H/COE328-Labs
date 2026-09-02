@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/lab1/designstyle2/exampleverilog.v
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/lab1/designstyle2/db/exampleverilog.cbx.xml
+design_name = exampleverilog
+instance = comp, \x2~I\, x2, exampleverilog, 1
+instance = comp, \x1~I\, x1, exampleverilog, 1
+instance = comp, \x3~I\, x3, exampleverilog, 1
+instance = comp, \f~0\, f~0, exampleverilog, 1
+instance = comp, \f~I\, f, exampleverilog, 1

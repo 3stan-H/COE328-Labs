@@ -1,0 +1,65 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY ALU1 IS
+PORT (Clock : IN STD_LOGIC ;
+	A ,B : IN UNSIGNED(7 DOWNTO 0);
+	OP: IN UNSIGNED(15 downto 0);
+	Neg: OUT STD_LOGIC;
+	R1: OUT UNSIGNED(3 DOWNTO 0);--lower of the 4bits from 8bits Result
+	R2: OUT UNSIGNED(3 DOWNTO 0));--higher of the 4bits from 8bits Result
+END ALU1;
+
+ARCHITECTURE Behavior OF ALU1 IS
+SIGNAL Reg1, Reg2, Result: UNSIGNED(7 DOWNTO 0) := (OTHERS => '0');
+
+BEGIN
+	Reg1 <= A;
+	Reg2 <= B;
+	PROCESS (Clock, OP,A,B)
+	BEGIN
+		--IF (rising_edge(Clock)) THEN
+			CASE OP IS
+				WHEN "0000000000000001" => --funtion 1 - addition
+					Neg <= '0';
+					Result <= Reg2 + Reg1;
+				WHEN "0000000000000010"  => --function 2 - subtraction
+					IF (Reg1 < Reg2) then
+						Neg <= '1';
+						Result <= Reg2 - Reg1;
+					ELSE
+						Neg <= '0';
+						Result <= Reg1 - Reg2;
+							END IF;
+				WHEN "0000000000000100" => --Function 3 - NOT
+					Neg <= '0';
+					Result <= NOT(Reg1);
+				WHEN "0000000000001000" => --Function 4 - NAND
+					Neg <= '0';
+					Result <= NOT(Reg1 AND Reg2);
+				WHEN "0000000000010000" => --Function 5 - NOR
+					Neg <= '0';
+					Result <= NOT(Reg1 OR Reg2);
+				WHEN "0000000000100000" => --Function 6 - AND
+					Neg <= '0';
+					Result <= (Reg1 AND Reg2);
+				WHEN "0000000001000000" => --Function 7 - XOR
+					Neg <= '0';
+					Result <= (Reg1 XOR Reg2);
+				WHEN "0000000010000000" => --Function 8 - OR
+					Neg <= '0';
+					Result <= (Reg1 OR Reg2);
+				WHEN "0000000100000000" => --Function 9 - XNOR
+					Neg <= '0';
+					Result <= NOT(Reg1 XOR Reg2);
+				WHEN OTHERS => -- Don't care
+			END CASE;
+		--END IF;
+	END PROCESS;
+	
+R1 <= Result(3 DOWNTO 0);
+R2 <= Result(7 DOWNTO 4);
+
+END Behavior;

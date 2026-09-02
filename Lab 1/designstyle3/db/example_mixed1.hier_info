@@ -1,0 +1,9 @@
+|example_mixed1
+f <= <GND>
+w1 => ~NO_FANOUT~
+w2 => ~NO_FANOUT~
+w3 => ~NO_FANOUT~
+w4 => ~NO_FANOUT~
+x2 => ~NO_FANOUT~
+
+

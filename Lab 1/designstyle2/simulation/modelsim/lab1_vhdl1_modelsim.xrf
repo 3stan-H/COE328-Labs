@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/lab1/designstyle2/lab1_vhdl1.vhd
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/lab1/designstyle2/Waveform1.vwf
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/lab1/designstyle3/lab1_vhdl2.vhd
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/lab1/designstyle2/db/lab1_vhdl1.cbx.xml
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = lab1_vhdl1
+instance = comp, \x2~I , x2, lab1_vhdl1, 1
+instance = comp, \x1~I , x1, lab1_vhdl1, 1
+instance = comp, \x3~I , x3, lab1_vhdl1, 1
+instance = comp, \f~0 , f~0, lab1_vhdl1, 1
+instance = comp, \f~I , f, lab1_vhdl1, 1

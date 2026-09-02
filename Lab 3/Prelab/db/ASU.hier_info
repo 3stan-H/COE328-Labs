@@ -1,0 +1,28 @@
+|ASU
+Cin => Add1.IN10
+Cin => subY[3].OUTPUTSELECT
+Cin => subY[2].OUTPUTSELECT
+Cin => subY[1].OUTPUTSELECT
+Cin => subY[0].OUTPUTSELECT
+X[0] => Add0.IN4
+X[1] => Add0.IN3
+X[2] => Add0.IN2
+X[3] => Add0.IN1
+X[3] => Overflow~0.IN1
+Y[0] => subY[0].DATAA
+Y[0] => subY[0].DATAB
+Y[1] => subY[1].DATAA
+Y[1] => subY[1].DATAB
+Y[2] => subY[2].DATAA
+Y[2] => subY[2].DATAB
+Y[3] => subY[3].DATAA
+Y[3] => subY[3].DATAB
+S[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= Overflow~2.DB_MAX_OUTPUT_PORT_TYPE
+negative <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

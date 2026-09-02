@@ -1,0 +1,102 @@
+|lab3_partA_mix
+Cout <= ASU:inst.Cout
+Cin => ASU:inst.Cin
+X[0] => ASU:inst.X[0]
+X[1] => ASU:inst.X[1]
+X[2] => ASU:inst.X[2]
+X[3] => ASU:inst.X[3]
+Y[0] => ASU:inst.Y[0]
+Y[1] => ASU:inst.Y[1]
+Y[2] => ASU:inst.Y[2]
+Y[3] => ASU:inst.Y[3]
+Overflow <= ASU:inst.Overflow
+leds1[6] <= sseg:inst5.leds1[6]
+leds1[5] <= sseg:inst5.leds1[5]
+leds1[4] <= sseg:inst5.leds1[4]
+leds1[3] <= sseg:inst5.leds1[3]
+leds1[2] <= sseg:inst5.leds1[2]
+leds1[1] <= sseg:inst5.leds1[1]
+leds1[0] <= sseg:inst5.leds1[0]
+leds2[6] <= sseg:inst5.leds2[6]
+leds2[5] <= sseg:inst5.leds2[5]
+leds2[4] <= sseg:inst5.leds2[4]
+leds2[3] <= sseg:inst5.leds2[3]
+leds2[2] <= sseg:inst5.leds2[2]
+leds2[1] <= sseg:inst5.leds2[1]
+leds2[0] <= sseg:inst5.leds2[0]
+
+
+|lab3_partA_mix|ASU:inst
+Cin => Add1.IN10
+Cin => subY[3].OUTPUTSELECT
+Cin => subY[2].OUTPUTSELECT
+Cin => subY[1].OUTPUTSELECT
+Cin => subY[0].OUTPUTSELECT
+X[0] => Add0.IN4
+X[1] => Add0.IN3
+X[2] => Add0.IN2
+X[3] => Add0.IN1
+X[3] => Overflow.IN1
+Y[0] => subY[0].DATAA
+Y[0] => subY[0].DATAB
+Y[1] => subY[1].DATAA
+Y[1] => subY[1].DATAB
+Y[2] => subY[2].DATAA
+Y[2] => subY[2].DATAB
+Y[3] => subY[3].DATAA
+Y[3] => subY[3].DATAB
+S[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
+negative <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_partA_mix|sseg:inst5
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+leds1[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+leds1[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+leds1[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+leds1[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+leds1[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+leds1[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+leds1[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+leds2[6] <= negative.DB_MAX_OUTPUT_PORT_TYPE
+leds2[5] <= <VCC>
+leds2[4] <= <VCC>
+leds2[3] <= <VCC>
+leds2[2] <= <VCC>
+leds2[1] <= <VCC>
+leds2[0] <= <VCC>
+negative => leds2[6].DATAIN
+
+

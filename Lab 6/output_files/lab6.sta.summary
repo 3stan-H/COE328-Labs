@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Decoder_Eneable'
+Slack : -3.540
+TNS   : -3.540
+
+Type  : Slow Model Setup 'Clock'
+Slack : -0.089
+TNS   : -0.175
+
+Type  : Slow Model Hold 'Clock'
+Slack : 0.521
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Decoder_Eneable'
+Slack : 1.825
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Decoder_Eneable'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Slow Model Minimum Pulse Width 'Clock'
+Slack : -1.222
+TNS   : -18.222
+
+Type  : Fast Model Setup 'Decoder_Eneable'
+Slack : -1.112
+TNS   : -1.112
+
+Type  : Fast Model Setup 'Clock'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Clock'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Decoder_Eneable'
+Slack : 0.974
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Decoder_Eneable'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Fast Model Minimum Pulse Width 'Clock'
+Slack : -1.222
+TNS   : -18.222
+
+------------------------------------------------------------

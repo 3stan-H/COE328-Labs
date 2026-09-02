@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab6">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux2" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux6" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux0" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux3" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux1" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux0" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux4" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux8" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux0" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux4" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux2" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux6" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux1" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux5" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux1" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux5" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux3" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux6" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux2" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux4" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|decoder4to16:inst4|lpm_mux:Mux7" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|sseg:inst2|lpm_mux:Mux3" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Problem3|ssegForALU3:inst13|lpm_mux:Mux5" CBX_FILE_NAME="mux_joc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

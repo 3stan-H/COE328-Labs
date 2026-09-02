@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/Lab2/Lab2BlockDiagram.bdf
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/Lab2/Waveform.vwf
+source_file = 1, /home/student1/t2hsiung/Desktop/coe328/Lab2/db/Lab2BlockDiagram.cbx.xml
+design_name = Lab2BlockDiagram
+instance = comp, \x1~I , x1, Lab2BlockDiagram, 1
+instance = comp, \x4~I , x4, Lab2BlockDiagram, 1
+instance = comp, \x3~I , x3, Lab2BlockDiagram, 1
+instance = comp, \x2~I , x2, Lab2BlockDiagram, 1
+instance = comp, \inst10~0 , inst10~0, Lab2BlockDiagram, 1
+instance = comp, \f~I , f, Lab2BlockDiagram, 1
