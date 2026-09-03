@@ -13,7 +13,8 @@ Objectives:
 Tools Required:
 - Quartus II
 - Target FPGA/CPLD board (as specified by the course)
-- Files
+
+Files:
 - schematic_design.bdf — schematic-based logic circuit
 - vhdl_design.vhd — VHDL implementation of the same circuit
 - mixed_top.vhd / mixed_top.bdf — top-level design combining both sub-modules
